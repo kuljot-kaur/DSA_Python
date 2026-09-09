@@ -12,6 +12,4 @@ class Solution:
                 left += 1
             cw = right - left + 1
             maxf = max(maxf, cw)
-        return maxf    
-
         return maxf
