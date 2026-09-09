@@ -6,7 +6,8 @@ class Solution:
         for right in range(len(nums)):
             csum += nums[right]
             while csum >= target:
-                minl = min(minl, right - left + 1)
+                cw = right - left + 1
+                minl = min(minl, cw)
                 csum -= nums[left]
                 left += 1
         return minl if minl <= len(nums) else 0
